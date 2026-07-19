@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "565440370476",
+    "project_id": "express-bus-895e3",
+    "storage_bucket": "express-bus-895e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565440370476:android:b7e4f28a40a90b355f3e89",
+        "android_client_info": {
+          "package_name": "com.example.express_administrator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5JME0LxECjxjKFGS-CfG5Eu4jQ0QMT1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
