@@ -44,6 +44,9 @@ class ResponsiveDesign extends StatelessWidget {
       desktop: Center(
         child: Text("Desktop dashboard....", style: Theme.of(context).textTheme.headlineLarge,),
       ),
+      tablet: Center(
+        child: Text("Tablet dashboard....", style: Theme.of(context).textTheme.headlineLarge,),
+      ),
       mobile: Center(
         child: Text("Mobile dashboard....", style: Theme.of(context).textTheme.headlineLarge,),
       ),
