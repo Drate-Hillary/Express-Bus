@@ -1,8 +1,4 @@
 import 'package:express_administrator/common/widgets/layout/templates/site_layout.dart';
-import 'package:express_administrator/common/widgets/responsive/responsive_design.dart';
-import 'package:express_administrator/common/widgets/responsive/screens/desktop.dart';
-import 'package:express_administrator/common/widgets/responsive/screens/mobile.dart';
-import 'package:express_administrator/common/widgets/responsive/screens/tablet.dart';
 import 'package:express_administrator/routes/app_route.dart';
 import 'package:express_administrator/routes/routes.dart';
 import 'package:express_administrator/utils/themes/theme.dart';

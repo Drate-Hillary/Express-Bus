@@ -1,6 +1,6 @@
 class AppRoutes {
   // demo
-  static const responsiveDesign =  "/resonsive-design";
+  static const responsiveDesign =  "/";
 
   // authentication
   static const login = "/login";
