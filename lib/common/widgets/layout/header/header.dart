@@ -8,7 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class Header extends StatelessWidget implements PreferredSizeWidget {
-  const Header({super.key});
+  const Header({super.key, this.scaffoldKey});
+
+  final GlobalKey<ScaffoldState>? scaffoldKey;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
       child: AppBar(
         leading: !DeviceUtility.isDesktopScreen(context)
             ? IconButton(
-                onPressed: () {},
+                onPressed: ()=> scaffoldKey?.currentState?.openDrawer(),
                 icon: HugeIcon(
                   icon: HugeIcons.strokeRoundedPanelLeftClose,
                   size: AppSize.iconMd,
@@ -82,14 +84,37 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
             ),
           ),
 
+          const SizedBox(width: AppSize.spaceBtwSections / 2),
+
           // Profile image
-          RoundedImage(
-            imageType: ImageType.asset,
-            image: AppImageStrings.user,
-            width: 40,
-            height: 40,
-            padding: 2,
-            borderRadius: AppSize.borderRadiusFull,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              RoundedImage(
+                imageType: ImageType.asset,
+                image: AppImageStrings.user,
+                width: 48,
+                height: 48,
+                padding: 4,
+                borderRadius: AppSize.borderRadiusFull,
+              ),
+              const SizedBox(width: AppSize.sm),
+              if (!DeviceUtility.isMobileScreen(context))
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Hillary',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text(
+                      'hillary@example.com',
+                      style: Theme.of(context).textTheme.labelMedium,
+                    ),
+                  ],
+                ),
+            ],
           ),
         ],
       ),
