@@ -1,4 +1,5 @@
 import 'package:express_administrator/common/widgets/layout/header/header.dart';
+import 'package:express_administrator/common/widgets/layout/sidebars/sidebar.dart';
 import 'package:express_administrator/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -13,9 +14,7 @@ class Tablet extends StatelessWidget {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: AppColors.primaryBackground,
-      drawer: const Drawer(
-        backgroundColor: Colors.amber, 
-      ),
+      drawer: Sidebar(),
       appBar: Header(scaffoldKey: scaffoldKey,),
       body: body ?? const SizedBox.shrink(), 
     );

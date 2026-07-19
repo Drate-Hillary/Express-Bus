@@ -90,13 +90,15 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              RoundedImage(
-                imageType: ImageType.asset,
-                image: AppImageStrings.user,
-                width: 48,
-                height: 48,
-                padding: 4,
-                borderRadius: AppSize.borderRadiusFull,
+              Center(
+                child: RoundedImage(
+                  imageType: ImageType.asset,
+                  image: AppImageStrings.user,
+                  width: 48,
+                  height: 48,
+                  padding: 4,
+                  borderRadius: AppSize.borderRadiusFull,
+                ),
               ),
               const SizedBox(width: AppSize.sm),
               if (!DeviceUtility.isMobileScreen(context))
