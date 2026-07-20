@@ -1,31 +1,32 @@
-// import 'package:express_administrator/routes/routes.dart';
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
+import 'package:express_administrator/routes/routes.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:express_administrator/common/widgets/layout/sidebars/sidebar_controller.dart';
 
-// class RouteObserver extends GetObserver {
-//   @override
-//   void didPop(Route<dynamic>? route, Route<dynamic>? previousRoute) {
-//     final sidebarController = Get.put(SidebarController());
+class RouteObserver extends GetObserver {
+  @override
+  void didPop(Route<dynamic>? route, Route<dynamic>? previousRoute) {
+    final sidebarController = Get.put(SidebarController());
 
-//     if (previousRoute != null) {
-//       for (var routeName in AppRoutes.sidebarMenuItems) {
-//         if (previousRoute.settings.name == routeName) {
-//           sidebarController.activeItem.value = routeName;
-//         }
-//       }
-//     }
-//   }
+    if (previousRoute != null) {
+      for (var routeName in AppRoutes.sidebarMenuItems) {
+        if (previousRoute.settings.name == routeName) {
+          sidebarController.activeItem.value = routeName;
+        }
+      }
+    }
+  }
 
-//   @override
-//   void didPush(Route<dynamic>? route, Route<dynamic>? previousRoute) {
-//     final sidebarController = Get.put(SidebarController());
+  // @override
+  // void didPush(Route<dynamic>? route, Route<dynamic>? previousRoute) {
+  //   final sidebarController = Get.put(SidebarController());
 
-//     if (route != null) {
-//       for (var routeName in AppRoutes.sideMenuItems) {
-//         if (previousRoute.settings.name == routeName) {
-//           sidebarController.activeItem.value = routeName;
-//         }
-//       }
-//     }
-//   }
-// }
+  //   if (route != null) {
+  //     for (var routeName in AppRoutes.sidebarMenuItems) {
+  //       if (previousRoute.settings.name == routeName) {
+  //         sidebarController.activeItem.value = routeName;
+  //       }
+  //     }
+  //   }
+  // }
+}
