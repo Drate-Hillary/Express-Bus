@@ -15,7 +15,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: AppTheme.lightTheme,
       getPages: AppRoute.pages,
-      initialRoute: AppRoutes.responsiveDesign,
+      initialRoute: AppRoutes.login,
       unknownRoute: GetPage(
         name: "/page-not-found",
         page: () => Scaffold(

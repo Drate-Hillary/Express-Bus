@@ -2,10 +2,14 @@ class AppRoutes {
   // demo
   static const responsiveDesign =  "/";
 
+  // sidebar menu items
+  static const sidebarMenuItems = [];
+
   // authentication
   static const login = "/login";
   static const forgotPassword = "/forgot-password";
   static const verification = "/verification-code";
+  static const resetPassword = '/reset-password';
 
   // dashboard
   static const dashboard = '/dashboard';
