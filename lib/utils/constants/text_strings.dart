@@ -17,5 +17,10 @@ class TextStrings {
   static const String enterConfirmPassword = 'Confirm your password';
 
   static const String forgotPassword = 'Forgot password?';
+  static const String forgotPasswordTitle = 'Forgot password';
+  static const String forgotPasswordSubTitle = "Don't worry draft an E-mail to get a new password";
   static const String rememberMe = 'Remember me';
+
+  static const String submit = 'Submit';
+  static const String submitting = 'Submitting...';
 }

@@ -1,6 +1,7 @@
 import 'package:express_administrator/utils/constants/image_strings.dart';
 import 'package:express_administrator/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:express_administrator/utils/constants/sizes.dart';
 
 class LoginHeader extends StatelessWidget {
   const LoginHeader({
@@ -14,12 +15,12 @@ class LoginHeader extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Image(
-          //   image: AssetImage(AppImageStrings.logo),
-          //   width: 100,
-          //   height: 100,
-          // ),
-          // const SizedBox(height: AppSize.spaceBtwSections),
+          Image(
+            image: AssetImage(AppImageStrings.logo),
+            width: 100,
+            height: 100,
+          ),
+          const SizedBox(height: AppSize.spaceBtwSections),
           Text(
             TextStrings.loginTitle,
             style: Theme.of(context).textTheme.headlineMedium,

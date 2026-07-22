@@ -1,7 +1,9 @@
+import 'package:express_administrator/routes/routes.dart';
 import 'package:express_administrator/utils/constants/colors.dart';
 import 'package:express_administrator/utils/constants/sizes.dart';
 import 'package:express_administrator/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hugeicons/hugeicons.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -80,7 +82,7 @@ class LoginForm extends StatelessWidget {
     
                 // Forgot Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: ()=> Get.toNamed(AppRoutes.forgotPassword),
                   style: TextButton.styleFrom(
                     overlayColor: Colors.transparent,
                     backgroundColor: Colors.transparent,
