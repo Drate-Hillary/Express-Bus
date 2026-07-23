@@ -12,7 +12,7 @@ class CustomElevatedButtonTheme {
       disabledBackgroundColor: Colors.grey,
       side: BorderSide(color: Colors.blue.shade800),
       padding: const EdgeInsets.symmetric(vertical: 20),
-      textStyle: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
+      textStyle: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.w500),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     ),
   );

@@ -8,8 +8,9 @@ class CustomOutlineButtonTheme {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),
-      foregroundColor: Colors.white,
-      backgroundColor: Colors.black,
+      foregroundColor: Colors.black,
+      backgroundColor: Colors.transparent,
+      overlayColor: Colors.grey.shade200,
       side: BorderSide(color: Colors.black),
       padding: const EdgeInsets.symmetric(vertical: 20),
       

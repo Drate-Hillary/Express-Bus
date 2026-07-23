@@ -21,6 +21,12 @@ class TextStrings {
   static const String forgotPasswordSubTitle = "Don't worry draft an E-mail to get a new password";
   static const String rememberMe = 'Remember me';
 
+  static const String changePasswordTitle = "Password Reset Email Sent!";
+  static const String changePasswordSubTitle = "Your account security is our priority! We have sent a secure link to your email to safely change your password and protect your data.";
+
   static const String submit = 'Submit';
   static const String submitting = 'Submitting...';
+
+  static const String resendEmail = "Resend";
+  static const String back = "Done";
 }
